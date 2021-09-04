@@ -74,7 +74,7 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 30%;
-  font-family: "Segoe UI", serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .nav-links li {
