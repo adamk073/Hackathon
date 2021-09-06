@@ -59,9 +59,9 @@ nav {
   align-items: center;
   height: 12vh;
   font-family: "Segoe UI", sans-serif;
-  background: transparent;
-  backdrop-filter: blur(10px);
+  background-color: #FFFFFF;
   z-index: +1;
+  width: 100%;
 }
 
 .logo {
@@ -69,6 +69,10 @@ nav {
   font-size: 20px;
   text-decoration: none;
   font-weight: lighter;
+}
+
+.nav-links .current {
+  font-weight: bold;
 }
 
 .logo a {
@@ -132,7 +136,7 @@ nav {
     right: 0px;
     height: 88vh;
     top: 12vh;
-    background-color: rgba(255,255,255,1);
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
