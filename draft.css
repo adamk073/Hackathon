@@ -1,0 +1,93 @@
+.row {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.col {
+  flex-basis: 31%;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.col:hover {
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  transition: 0.5s
+}
+
+@media(max-width: 768px){
+  .row {
+    flex-direction: column;
+  }
+}
+
+.hoverColour .title1 {
+  color: #FFFFFF;
+}
+
+.hoverColour .subtitle1 {
+  color: #FFFFFF;
+}
+
+.col2 {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.col2 img {
+  /*image should be 502px x 711px*/
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer .title2 {
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 50px;
+  font-family: "Segoe UI Light";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.layer:hover .title2 {
+  bottom: 50%;
+  opacity: 1;
+}
+
+.layer:hover {
+  background: #37352f;
+  opacity: 0.7;
+}
+
+.hoverBox {
+  height: 100vh;
+}
+
+.hoverColour {
+  background: #37352f;
+  height: 100vh;
+}S

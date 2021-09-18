@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://trinket.io/embed/python/23cebd731a?outputOnly=true&runOption=run&start=result -->
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths desktop landscape windows windows10 windows10_0 32bit chrome chrome93 chrome93_0 webkit en mixblendmode" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Trinket: run code anywhere</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="icon" href="https://trinket.io/img/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://trinket.io/cache-prefix-f8d75b88/img/icons/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://trinket.io/cache-prefix-f8d75b88/img/icons/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://trinket.io/cache-prefix-f8d75b88/img/icons/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="https://trinket.io/cache-prefix-f8d75b88/img/icons/apple-touch-icon-precomposed.png">
+  <link rel="stylesheet" type="text/css" href="./Trinket_ run code anywhere_files/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./Trinket_ run code anywhere_files/font-mfizz.css">
+  <link rel="stylesheet" type="text/css" href="./Trinket_ run code anywhere_files/embed.css">
+  
+
+
+
+<link rel="stylesheet" type="text/css" href="./Trinket_ run code anywhere_files/rangeslider.min.css">
+<link rel="stylesheet" type="text/css" href="./Trinket_ run code anywhere_files/weather-icons.min.css">
+
+
+
+  <script type="text/javascript" async="" src="./Trinket_ run code anywhere_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-cOazIJF2cwen9PJSk2VFUMw8IAvgfITpWastzSU1OHy8/qJeuuSBpbPJYjfInJ8U"></script><script async="" src="./Trinket_ run code anywhere_files/analytics.js.download"></script><script type="text/javascript">
+    trinket = {
+      config : {
+        apphostname       : 'trinket.io',
+        usersubdomains    :  true,
+        protocol          : 'https',
+        cachePrefix       : 'cache-prefix-',
+        prefixes          :  {"components":"cache-prefix-db046552","js":"cache-prefix-f8d75b88","css":"cache-prefix-f8d75b88","img":"cache-prefix-f8d75b88","fonts":"cache-prefix-f8d75b88","partials":"cache-prefix-f8d75b88","skulpt":"50e5bcc6","pypyjs":"cache-prefix-e8e5bcf1","models":null,"m0-2021":"m0-2021"},
+        components        :  {"ace-builds":"v1.2.6.1rc2","anchor-js":"2.0.0","angular-file-saver":"1.1.3","angular-notifyjs":"0.1.0","angular-ui-router":"0.2.11","angular-ui-tree":"2.0.10","angular-ui-utils":"0.1.1","angular-xeditable":"0.1.8","bluebird":"3.5.1","d3":"3.4.11","filereader":"107f68c3b9","file-saver.js":"1.20150507.2","font-mfizz":"2.0.1","gsap":"1.15.0","jquery-ui":"https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1","jsdiff":"1.0.8","jszip":"3.1.4","jszip-utils":"dist","lazysizes":"1.5.0","lodash":"2.4.1","modernizr":"2.7.2","ng-file-upload":"1.2.6","ngInfiniteScroll":"1.1.2","notifyjs":"0.4.2","opal":"0.6.2","restangular":"1.3.1","speakingurl":"1.1.5","video.js":"5.20.4","yamljs":"0.1.5"},
+        vendorHost        : 'https://trinket-vendor-assets.trinket.io',
+        broadcastHostname : 'broadcastapp.trinket.io',
+        broadcastPort     : '',
+        broadcastProtocol : 'https',
+        python3_api       : 'https://python3-9-code.trinket.io',
+        java_api          : 'https://java8.trinket.io',
+        R_api             : 'https://r3.trinket.io',
+        pygame_api        : 'https://pygame.trinket.io',
+        plans             : [{ "connect"  : "Connect"  },
+                             { "codeplus" : "Code+" }],
+        logClientCodeError : false,
+        logClientMetric   : false,
+        draftDebounce     : 2500,
+        autosaveDebounce  : 1000
+      }
+    };
+    
+    </script>
+
+  <script src="./Trinket_ run code anywhere_files/jquery.min.js.download" type="text/javascript"></script>
+
+  <script src="./Trinket_ run code anywhere_files/modernizr.min.js.download" type="text/javascript"></script>
+  <script src="./Trinket_ run code anywhere_files/detectizr.min.js.download" type="text/javascript"></script>
+  <script src="./Trinket_ run code anywhere_files/md5.js.download" type="text/javascript"></script>
+  <script src="./Trinket_ run code anywhere_files/sha1.js.download" type="text/javascript"></script>
+  <script src="./Trinket_ run code anywhere_files/aes.js.download" type="text/javascript"></script>
+
+  <!--[if lte IE 9]>
+  <script type="text/javascript" src="/js/vendor/jQuery.XDomainRequest.js"></script>
+  <![endif]-->
+
+  
+  
+  
+  <script>
+    
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function() {
+      ga('create', 'UA-46899028-1', 'trinket.io');
+      
+    
+    ga('send', 'pageview');
+    
+    })();
+  </script>
+  
+  
+  <script src="./Trinket_ run code anywhere_files/api.js.download"></script>
+<script>
+function submitRecaptchaForm(formId) {
+  document.getElementById(formId).submit();
+}
+function submitContactForm() {
+  submitRecaptchaForm('contact-form');
+}
+function submitReportContentForm() {
+  document.getElementById('report-content-form').submit();
+}
+function submitPasswordResetForm() {
+  submitRecaptchaForm('password-reset-form');
+}
+function submitEmailForm(recaptcha) {
+  if (window.TrinketApp) {
+    window.TrinketApp.onSendEmailClick(recaptcha);
+  } else {
+    submitEmailModalForm(recaptcha);
+  }
+}
+function submitSignUpShortForm() {
+  submitRecaptchaForm('sign-up-short');
+}
+function submitSignUpLongForm() {
+  submitRecaptchaForm('sign-up-long');
+}
+function submitSignUpIndexForm() {
+  submitRecaptchaForm('sign-up-index');
+}
+function submitSignUpInterestForm() {
+  submitRecaptchaForm('interest-signup-form');
+}
+function submitEducatorForm() {
+  submitRecaptchaForm('submit-educator');
+}
+function submitM0RegistrationForm() {
+  submitRecaptchaForm('registration-form');
+}
+function emailVerificationForm() {
+  $.ajax({
+    method: "POST",
+    url: "/api/users/verify-email",
+    data: { 'g-recaptcha-response': grecaptcha.getResponse() }
+  })
+  .done(function(result) {
+    if (result.success) {
+      $('#account').notify(
+        "Verification email sent."
+        , { position : 'top center', className : 'success' }
+      );
+    }
+    else {
+      $('#account').notify(
+        "There was a problem sending the verification email. Please try again."
+        , { position : 'top center', className : 'alert' }
+      );
+    }
+  })
+  .fail(function(err) {
+    $('#account').notify(
+      "There was a problem sending the verification email. Please try again."
+      , { position : 'top center', className : 'alert' }
+    );
+  });
+}
+</script>
+
+  
+<meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style></head>
+<body id="embed_content_python" data-no-metrics="false" data-assignment="false" data-assignment-feedback="false" data-view-only="false" data-autofocus="true" class="mode-output  remixable" data-is-mobile="false" data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1028.0">
+  <input id="whoami" type="hidden" value="adam-hayat-khan-gmail-com">
+  
+  <input id="user" type="hidden" value="614573966525133c4589ba9e">
+  
+  <input id="roles" type="hidden" value="88411890b8101c2b55527240e67dddf0+U2FsdGVkX18Y2QaaTTO6u6Jn+JSjUp3RWbx969xL0T4/ObdewBQl7n5sFTM7Mp2mG7NisCbPtFKsXfFcEz3b2JKw9kNY+/Y2AuXlmKRanBQZ9egdRApOB/ax5dMSvT9QksbRyrwBSRVxni9G024pTTB91VYMeFuMAdPwufAvW7Cis8Y3jhmf//F/wFlCQ48znh7cD4wAR091AVWPVUC8GmYBIwGrZUpliOfnUs1/tWIaGnRCU0RBrQ68IHjpjFXrnm2xSl56JgedcRVwb7G74fvg0h7rQZL++IiBRMLG97h/LfUaDSbq0Z1wp0vmwrZ2e9ooH0MszvTgDgvbslPHVTjxu919V/ZcAiHf+R4bSuI=">
+  
+  <script>
+    trinketObject = {"id":"614574b66525133c4589be5c","code":"[{&quot;name&quot;:&quot;main.py&quot;,&quot;content&quot;:&quot;\\&quot;\\&quot;\\&quot;\\r\\nAbbreviations\\r\\nMessage Analysis\\r\\n\\&quot;\\&quot;\\&quot;\\r\\n# Declare Dictionary\\r\\nabbreviationsDictionary = {\\r\\n \\&quot;afaik\\&quot;: \\&quot;as far as i know\\&quot;,\\r\\n \\&quot;aka\\&quot;: \\&quot;also known as\\&quot;,\\r\\n \\&quot;ama\\&quot;: \\&quot;ask me anything\\&quot;,\\r\\n \\&quot;amaa\\&quot;: \\&quot;ask me almost anything\\&quot;,\\r\\n \\&quot;asap\\&quot;: \\&quot;as soon as possible\\&quot;,\\r\\n \\&quot;atm\\&quot;: \\&quot;at the moment\\&quot;,\\r\\n \\&quot;bae\\&quot;: \\&quot;before anyone else\\&quot;,\\r\\n \\&quot;b4n\\&quot;: \\&quot;bye for now\\&quot;,\\r\\n \\&quot;bbl\\&quot;: \\&quot;be back later\\&quot;,\\r\\n \\&quot;bc\\&quot;: \\&quot;because\\&quot;,\\r\\n \\&quot;b/c\\&quot;: \\&quot;because\\&quot;,\\r\\n \\&quot;bday\\&quot;: \\&quot;birthday\\&quot;,\\r\\n \\&quot;bff\\&quot;: \\&quot;best friend forever\\&quot;,\\r\\n \\&quot;brb\\&quot;: \\&quot;be right back\\&quot;,\\r\\n \\&quot;btw\\&quot;: \\&quot;by the way\\&quot;,\\r\\n \\&quot;cob\\&quot;: \\&quot;close of business\\&quot;,\\r\\n \\&quot;cya\\&quot;: \\&quot;see ya\\&quot;,\\r\\n \\&quot;cyt\\&quot;: \\&quot;see you tomorrow\\&quot;,\\r\\n \\&quot;dae\\&quot;: \\&quot;does anybody else\\&quot;,\\r\\n \\&quot;diky\\&quot;: \\&quot;do i know you?\\&quot;,\\r\\n \\&quot;diky\\&quot;: \\&quot;do i know you\\&quot;,\\r\\n \\&quot;diy\\&quot;: \\&quot;do it yourself\\&quot;,\\r\\n \\&quot;dm\\&quot;: \\&quot;direct message\\&quot;,\\r\\n \\&quot;eod\\&quot;: \\&quot;end of day\\&quot;,\\r\\n \\&quot;f2f\\&quot;: \\&quot;face to face\\&quot;,\\r\\n \\&quot;fomo\\&quot;: \\&quot;fear of missing out\\&quot;,\\r\\n \\&quot;ftfy\\&quot;: \\&quot;fixed that for you\\&quot;,\\r\\n \\&quot;ftw\\&quot;: \\&quot;for the win\\&quot;,\\r\\n \\&quot;fwiw\\&quot;: \\&quot;for what it&#39;s worth\\&quot;,\\r\\n \\&quot;fyi\\&quot;: \\&quot;for your information\\&quot;,\\r\\n \\&quot;gtg\\&quot;: \\&quot;got to go\\&quot;,\\r\\n \\&quot;g2g\\&quot;: \\&quot;got to go\\&quot;,\\r\\n \\&quot;gr8\\&quot;: \\&quot;great\\&quot;,\\r\\n \\&quot;hbu\\&quot;: \\&quot;how about you?\\&quot;,\\r\\n \\&quot;hbu\\&quot;: \\&quot;how about you\\&quot;,\\r\\n \\&quot;hifw\\&quot;: \\&quot;how I feel when\\&quot;,\\r\\n \\&quot;hmu\\&quot;: \\&quot;hit me up\\&quot;,\\r\\n \\&quot;hth\\&quot;: \\&quot;hope this helps\\&quot;,\\r\\n \\&quot;icymi\\&quot;: \\&quot;in case you missed it\\&quot;,\\r\\n \\&quot;idc\\&quot;: \\&quot;i don&#39;t care\\&quot;,\\r\\n \\&quot;idk\\&quot;: \\&quot;i don&#39;t know\\&quot;,\\r\\n \\&quot;ifyp\\&quot;: \\&quot;i feel your pain\\&quot;,\\r\\n \\&quot;ig\\&quot;: \\&quot;instagram\\&quot;,\\r\\n \\&quot;iirc\\&quot;: \\&quot;if i recall correctly\\&quot;,\\r\\n \\&quot;ikr\\&quot;: \\&quot;i know right\\&quot;,\\r\\n \\&quot;ilysm\\&quot;: \\&quot;i love you so much\\&quot;,\\r\\n \\&quot;ily\\&quot;: \\&quot;i love you\\&quot;,\\r\\n \\&quot;imo\\&quot;: \\&quot;in my opinion\\&quot;,\\r\\n \\&quot;imho\\&quot;: \\&quot;in my humble opinion\\&quot;,\\r\\n \\&quot;imho\\&quot;: \\&quot;in my honest opinion\\&quot;,\\r\\n \\&quot;irl\\&quot;: \\&quot;in real life\\&quot;,\\r\\n \\&quot;istg\\&quot;: \\&quot;i swear to god\\&quot;,\\r\\n \\&quot;iykyk\\&quot;: \\&quot;if you know you know\\&quot;,\\r\\n \\&quot;jic\\&quot;: \\&quot;just in case\\&quot;,\\r\\n \\&quot;jk\\&quot;: \\&quot;just kidding\\&quot;,\\r\\n \\&quot;jsyk\\&quot;: \\&quot;just so you know\\&quot;,\\r\\n \\&quot;kmn\\&quot;: \\&quot;kill me now\\&quot;,\\r\\n \\&quot;lmk\\&quot;: \\&quot;let me know\\&quot;,\\r\\n \\&quot;mfw\\&quot;: \\&quot;my face when\\&quot;,\\r\\n \\&quot;mrw\\&quot;: \\&quot;my reaction when\\&quot;,\\r\\n \\&quot;msg\\&quot;: \\&quot;message\\&quot;,\\r\\n \\&quot;nbd\\&quot;: \\&quot;no big deal\\&quot;,\\r\\n \\&quot;ngl\\&quot;: \\&quot;not gonna lie\\&quot;,\\r\\n \\&quot;np\\&quot;: \\&quot;no problem\\&quot;,\\r\\n \\&quot;nth\\&quot;: \\&quot;nice to have\\&quot;,\\r\\n \\&quot;nvm\\&quot;: \\&quot;never mind\\&quot;,\\r\\n \\&quot;ofc\\&quot;: \\&quot;of course\\&quot;,\\r\\n \\&quot;omg\\&quot;: \\&quot;oh my god\\&quot;,\\r\\n \\&quot;oml\\&quot;: \\&quot;oh my lord\\&quot;,\\r\\n \\&quot;omw\\&quot;: \\&quot;on my way\\&quot;,\\r\\n \\&quot;ooo\\&quot;: \\&quot;out of office\\&quot;,\\r\\n \\&quot;ootd\\&quot;: \\&quot;outfit of the day\\&quot;,\\r\\n \\&quot;otoh\\&quot;: \\&quot;on the other hand\\&quot;,\\r\\n \\&quot;pnl\\&quot;: \\&quot;peace and love\\&quot;,\\r\\n \\&quot;pov\\&quot;: \\&quot;point of view\\&quot;,\\r\\n \\&quot;ppl\\&quot;: \\&quot;people\\&quot;,\\r\\n \\&quot;qap\\&quot;: \\&quot;quick as possible\\&quot;,\\r\\n \\&quot;qotd\\&quot;: \\&quot;quote of the day\\&quot;,\\r\\n \\&quot;rn\\&quot;: \\&quot;right now\\&quot;,\\r\\n \\&quot;rofl\\&quot;: \\&quot;rolling on the floor laughing\\&quot;,\\r\\n \\&quot;rofl\\&quot;: \\&quot;rolling on floor laughing\\&quot;,\\r\\n \\&quot;sflr\\&quot;: \\&quot;sorry for late reply\\&quot;,\\r\\n \\&quot;smh\\&quot;: \\&quot;shaking my head\\&quot;,\\r\\n \\&quot;snmp\\&quot;: \\&quot;so not my problem\\&quot;,\\r\\n \\&quot;srsly\\&quot;: \\&quot;seriously\\&quot;,\\r\\n \\&quot;sus\\&quot;: \\&quot;suspicious\\&quot;,\\r\\n \\&quot;tba\\&quot;: \\&quot;to be announced\\&quot;,\\r\\n \\&quot;tbc\\&quot;: \\&quot;to be continued\\&quot;,\\r\\n \\&quot;tbd\\&quot;: \\&quot;to be decided\\&quot;,\\r\\n \\&quot;tbd\\&quot;: \\&quot;to be determined\\&quot;,\\r\\n \\&quot;tbf\\&quot;: \\&quot;to be frank\\&quot;,\\r\\n \\&quot;tbh\\&quot;: \\&quot;to be honest\\&quot;,\\r\\n \\&quot;tfw\\&quot;: \\&quot;that feeling when\\&quot;,\\r\\n \\&quot;tgif\\&quot;: \\&quot;thank goodness it&#39;s friday\\&quot;,\\r\\n \\&quot;tgif\\&quot;: \\&quot;thank god it&#39;s friday\\&quot;,\\r\\n \\&quot;thx\\&quot;: \\&quot;thanks\\&quot;,\\r\\n \\&quot;tia\\&quot;: \\&quot;thanks in advance\\&quot;,\\r\\n \\&quot;til\\&quot;: \\&quot;today i learned\\&quot;,\\r\\n \\&quot;tl;dr\\&quot;: \\&quot;too long; didn&#39;t read\\&quot;,\\r\\n \\&quot;tl;dr\\&quot;: \\&quot;too long; don&#39;t read\\&quot;,\\r\\n \\&quot;tmi\\&quot;: \\&quot;too much information\\&quot;,\\r\\n \\&quot;ttp\\&quot;: \\&quot;to the point\\&quot;,\\r\\n \\&quot;ttyl\\&quot;: \\&quot;talk to you later\\&quot;,\\r\\n \\&quot;ty\\&quot;: \\&quot;thank you\\&quot;,\\r\\n \\&quot;tyt\\&quot;: \\&quot;take your time\\&quot;,\\r\\n \\&quot;wdym\\&quot;: \\&quot;what do you mean?\\&quot;,\\r\\n \\&quot;wdym\\&quot;: \\&quot;what do you mean\\&quot;,\\r\\n \\&quot;wfh\\&quot;: \\&quot;work from home\\&quot;,\\r\\n \\&quot;w/o\\&quot;: \\&quot;without\\&quot;,\\r\\n \\&quot;wywh\\&quot;: \\&quot;wish you were here\\&quot;,\\r\\n \\&quot;ygti\\&quot;: \\&quot;you get the idea\\&quot;,\\r\\n \\&quot;ymmv\\&quot;: \\&quot;your mileage may vary\\&quot;,\\r\\n \\&quot;yolo\\&quot;: \\&quot;you only live once\\&quot;,\\r\\n \\&quot;yp\\&quot;: \\&quot;yes please\\&quot;,\\r\\n \\&quot;afk\\&quot;: \\&quot;away from keyboard\\&quot;,\\r\\n \\&quot;aamof\\&quot;: \\&quot;as a matter of fact\\&quot;,\\r\\n \\&quot;aap\\&quot;: \\&quot;always a pleasure\\&quot;,\\r\\n \\&quot;atb\\&quot;: \\&quot;all the best\\&quot;,\\r\\n \\&quot;afaic\\&quot;: \\&quot;as far as i&#39;m concerned\\&quot;,\\r\\n \\&quot;bf\\&quot;: \\&quot;boyfriend\\&quot;,\\r\\n \\&quot;gf\\&quot;: \\&quot;girlfriend\\&quot;,\\r\\n \\&quot;bg\\&quot;: \\&quot;background\\&quot;,\\r\\n \\&quot;b/f\\&quot;: \\&quot;boyfriend\\&quot;,\\r\\n \\&quot;g/f\\&quot;: \\&quot;girlfriend\\&quot;,\\r\\n \\&quot;b/g\\&quot;: \\&quot;background\\&quot;,\\r\\n \\&quot;bif\\&quot;: \\&quot;before i forget\\&quot;,\\r\\n \\&quot;bsts\\&quot;: \\&quot;better safe than sorry\\&quot;,\\r\\n \\&quot;btdt\\&quot;: \\&quot;been there, done that\\&quot;,\\r\\n \\&quot;btdt\\&quot;: \\&quot;been there done that\\&quot;,\\r\\n \\&quot;ezy\\&quot;: \\&quot;easy\\&quot;,\\r\\n \\&quot;sm\\&quot;: \\&quot;so much\\&quot;,\\r\\n \\&quot;lmao\\&quot;: \\&quot;laughing my a** off\\&quot;,\\r\\n \\&quot;lmfao\\&quot;: \\&quot;laughing my f**k*** a** off\\&quot;,\\r\\n}\\r\\n# Chatbot Intro\\r\\n\\r\\nprint(\\&quot;Hello! My name is 404 Bot. You can use me to convert phrases in your message into texting abbreviations and vice versa.\\&quot;)\\r\\nprint(\\&quot;I hope I can be of use in bridging the gap in communication between generations.\\&quot;)\\r\\n\\r\\n# Conditional Statements\\r\\nboolean = \\&quot;Yes\\&quot;\\r\\nwhile boolean == \\&quot;Yes\\&quot;:\\r\\n  print(\\&quot;Analysis Method: ATM - Acronym To Message, MTA - Message To Acronym\\&quot;)\\r\\n  analysisMethod = str(input(\\&quot;Analysis Method: \\&quot;))\\r\\n  while analysisMethod != \\&quot;ATM\\&quot; and analysisMethod != \\&quot;MTA\\&quot;:\\r\\n    analysisMethod = str(input(\\&quot;Analysis Method: \\&quot;))\\r\\n\\r\\n  userMessage = str(input(\\&quot;Enter Message: \\&quot;))\\r\\n  if analysisMethod == \\&quot;ATM\\&quot;:\\r\\n    for key in abbreviationsDictionary:\\r\\n      try:\\r\\n        userMessage = userMessage.casefold()\\r\\n        userMessage.index(key)\\r\\n      except ValueError:\\r\\n        pass\\r\\n      else:\\r\\n        replace = abbreviationsDictionary.get(key)\\r\\n        userMessage = userMessage.replace(key, replace)\\r\\n\\r\\n  elif analysisMethod == \\&quot;MTA\\&quot;:\\r\\n    list1 = list(abbreviationsDictionary.values())\\r\\n    for value in list1:\\r\\n      try:\\r\\n        value = value.casefold()\\r\\n        userMessage.index(str(value))\\r\\n      except ValueError:\\r\\n        pass\\r\\n      else:\\r\\n        replace2 = (list(abbreviationsDictionary.keys())[list(abbreviationsDictionary.values()).index(str(value))])\\r\\n        userMessage = userMessage.replace(str(value), replace2)\\r\\n\\r\\n  if boolean == \\&quot;Yes\\&quot;:\\r\\n    print(userMessage)\\r\\n  else:\\r\\n    pass\\r\\n\\r\\n  boolean = input(\\&quot;Do you want to enter another message? \\&quot;)\\r\\n  if boolean == \\&quot;No\\&quot;:\\r\\n    print(\\&quot;Thank you! You just got a taste of the future of communication.\\&quot;)&quot;}]","lang":"python","name":null,"description":null,"groupId":null,"_parent":"614574296525133c4589bcab","_origin_id":null,"_owner":null,"hash":"6df5b45e35d6592fd48312953085423f0df47c3c","shortCode":"23cebd731a","lastUpdated":"2021-09-18T05:10:14.392Z","metrics":{"runs":8,"embedViews":10,"embedShares":1},"lastView":{"viewType":"embedViews","viewedOn":"2021-09-18T05:27:23.260Z","referer":"","address":"116.88.161.105"},"snapshot":"https://trinket-snapshots.trinket.io/avatar-default.png","assets":[],"displayOnly":null,"original":null,"settings":{"autofocusEnabled":true,"testsEnabled":false,"astro_pi_mission_submission":false},"submissionState":null,"submissionOpts":{},"submittedOn":null,"slug":"","published":false};
+  
+  </script>
+  <input id="shareType" type="hidden" value="python">
+  <input id="proxy" type="hidden" value="https://trinket.io/proxy">
+
+  <div id="wrapper" class="off-canvas-wrap owner-view row" data-offcanvas="">
+    <div class="trinket-wrapper inner-wrap">
+
+    
+
+      <nav id="menu" class="trinket-header " data-interface="top-menu">
+        
+        <section class="left title-bar">
+        
+          <span title="hosted by trinket.io" data-dropdown="brand-menu" aria-controls="brand-menu" aria-expanded="false">
+            <img src="./Trinket_ run code anywhere_files/404.png">
+          </span>
+          <ul id="brand-menu" class="f-dropdown" data-dropdown-content="" aria-hidden="true" tabindex="-1">
+            <li><a href="https://trinket.io/" target="_blank">About</a></li>
+            <li><a href="https://trinket.io/signup" target="_blank">Sign Up</a></li>
+          </ul>
+        
+        </section>
+        <section class="mode-toolbar left" data-mode="interact">
+          <div class="icon-bar label-right">
+            
+
+  
+<button class="run-it menu-button item button allow-original" data-action="code.run" title="Stop program." aria-label="Run Code" role="button" tabindex="0">
+  <i class="fa fa-stop"></i>
+  <label>Stop</label>
+</button>
+<a class="check-it menu-button item allow-original hide" data-action="code.check" title="Check your code.">
+  <i class="fa fa-check-circle"></i>
+  <label class="show-for-medium-up">Check</label>
+</a>
+
+
+
+
+          </div>
+        </section>
+        
+      </nav>
+
+      <section class="trinket-content main-section" data-interface="content">
+        <div id="flashMessage" class="container hide">
+          <div id="flashContent"></div>
+        </div>
+        <div class="trinket-content-wrapper ">
+          <div id="content-overlay" class="hide" data-interface="overlay" style="font-size: 1em;"></div>
+          
+  <input id="honeypot" type="text" tabindex="-1" style="font-size: 1em;">
+  <input id="start-value" type="hidden" value="result" style="font-size: 1em;">
+  <input id="runOption-value" type="hidden" value="run" style="font-size: 1em;">
+  <input id="runMode-value" type="hidden" value="" style="font-size: 1em;">
+  <div id="imageAssets" style="font-size: 1em;"></div>
+  <div id="modules" class="hide" data-interface="overlay" style="font-size: 1em;">
+    <a class="menu-button closer" data-action="code.modules" data-data="close"><i class="fa fa-times-circle-o"></i></a>
+  </div>
+  <div id="editor" class="code-editor hide tabless with-info" data-interface="editor" style="font-size: 1em;"><div class="code-editor" data-interface="code-editor"><div class="tab-nav allow-assets"><dl class="left-options"><dd class="tab-button"><a class="tab-scroll-link left-arrow" data-direction="-1"><i class="fa fa-chevron-left"></i></a></dd><dd class="tab-button"><a class="tab-scroll-link right-arrow" data-direction="1"><i class="fa fa-chevron-right"></i></a></dd></dl><dl class="scrollable-content" role="tablist" aria-label="File tabs"><dd class="tab permanent active"><a class="file-tab-link" aria-label="main.py tab" role="tab"><span class="file-name">main.py</span><span class="tab-options-link menu-button" data-action="file.options" role="button" tabindex="0"></span></a></dd></dl><dl class="right-options"><dd class="tab-button" title="Create text file"><a class="add-file-link menu-button" data-action="file.add" aria-label="Add new file" role="button"><i class="fa fa-plus"></i></a></dd><dd class="tab-button" title="Upload text file"><a class="upload-file-link menu-button" data-action="file.upload" aria-label="Upload text file" role="button"><i class="fa fa-upload"></i></a></dd><dd class="tab" title="Manage images"><a class="file-tab-link add-asset-link" data-action="assets.view" title="View and Add Images"><i class="fa fa-file-image-o"></i></a></dd></dl><div class="clearfix"></div></div><div class="file-content-container"><div class="file-content active"></div><div class="file-content fixed-right"><div class="asset-viewer">
+  <div id="asset-viewer-contents" class="contents">
+    <div class="clearfix">
+      <p class="broadcasting-assets-info alert-box warning">
+        Adding or removing <span data-replace-text="files">images</span> is disabled during broadcasting.
+        You'll be able to update <span data-replace-text="files">images</span> again once the broadcast session is over.
+      </p>
+    </div>
+
+    <div class="clearfix">
+      <h4 class="left" data-replace-text="Files">Images</h4>
+      <a class="button small right" events="click:view.addimage.show"><i class="fa fa-plus"></i> <span data-replace-text="File">Image</span> Library</a>
+    </div>
+
+    <p>
+      <span data-replace-text="Files">Images</span> listed here are available to use in your code in this trinket.
+      Click the <span data-replace-text="File">Image</span> Library button to include more or upload new <span data-replace-text="files">images</span>.
+    </p>
+
+    <!-- <a class="button small" events="click:view.add-link.show"><i class="fa fa-link">Link</i></a> -->
+
+    <div id="asset-list-wrapper">
+      <div class="howto-container hide" style="display: block;">
+        <dl class="accordion" data-accordion="">
+          <dd class="accordion-navigation">
+            <a href="https://trinket.io/embed/python/23cebd731a?outputOnly=true&amp;runOption=run&amp;start=result#howto"><i class="fa fa-question-circle"></i> How To Use <span data-replace-text="Files">Images</span></a>
+            <div id="howto" class="howto-message content">
+            </div>
+          </dd>
+        </dl>
+      </div>
+
+      <ul id="trinket-asset-list" class="list-view asset-list" style="display: none;">
+        
+      </ul>
+    </div>
+  </div>
+
+  
+
+  <!--
+  <div class="template overlay" template-id="imageLink">
+    <input type="text" placeholder="paste image url here">
+    <input type="text" placeholder="image name">
+    <input type="button" name="add">
+    <a class="closer"><i class="fa fa-times-circle-o"></i></a>
+  </div>
+  -->
+</div></div></div><div class="info-area collapsed"><div class="info-quick"></div><div class="scroll-wrap"><div class="info-full"></div></div><a class="expander fa"></a></div></div><form id="file-upload-form"><input type="file" name="file-upload" id="file-upload" class="hidden" tabindex="-1"></form></div>
+
+  
+
+  <div id="codeOutput" class="codeOutput" data-interface="output" style="font-size: 1em;">
+
+    
+    <div id="graphic-wrap" class="hide " style="">
+      <div id="graphic"></div><div class="turtle-overlay hide" data-action="graphic.focus" data-interface="output"></div>
+    </div>
+
+    <div id="output-dragbar" class="hide" data-action="resize"></div>
+    <div id="console-wrap" class="" style="height: 100%;">
+      <div id="console-output" aria-live="polite" aria-label="Code Output" class="console-active"><div style="inset: 0px; position: absolute; overflow: auto;"><pre class="jqconsole" style="margin: 0px; position: relative; min-height: 100%; box-sizing: border-box;"><span class="jqconsole-header" aria-hidden="true" role="presentation">
+</span><span><span class="">Hello! My name is 404 Bot. You can use me to convert phrases in your message into texting abbreviations and vice versa.</span></span><span><span class="">
+</span></span><span><span class="">I hope I can be of use in bridging the gap in communication between generations.</span></span><span><span class="">
+</span></span><span><span class="">Analysis Method: ATM - Acronym To Message, MTA - Message To Acronym</span></span><span><span class="">
+</span></span><span><span class="">Analysis Method: </span></span><span aria-hidden="true" role="presentation"></span><span class="jqconsole-input"><span></span><span><span> </span><span class="jqconsole-prompt-text"></span><span class="jqconsole-cursor" style="color: transparent; display: inline; z-index: 0; position: absolute;">&nbsp;</span><span style="position: relative;"></span></span><span></span></span></pre><div style="position: absolute; width: 1px; height: 0px; overflow: hidden; left: 152.516px; top: 78px;"><textarea wrap="off" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" style="position: absolute; width: 2px;"></textarea></div></div></div>
+    </div>
+
+    
+
+  </div>
+
+  
+
+        </div>
+      </section>
+
+      <aside class="left-off-canvas-menu" data-interface="trinket-menu" aria-hidden="true">
+  <ul class="off-canvas-list mode-menu" data-mode="interact">
+    
+    <li><label>Menu</label></li>
+    
+      
+    
+    
+    <li>
+      <a class="reset-it menu-button" data-action="code.reset"><i class="fa fa-refresh"></i>Reset</a>
+    </li>
+    
+    <li>
+      <a class="menu-button" data-action="mode.fullscreen" data-no-analytics="true"><i class="fa fa-expand"></i>Fullscreen</a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="menu-button" data-action="code.settings"><i class="fa fa-cog"></i>Settings</a>
+    </li>
+    
+    
+    
+    <li><label>Font Size</label></li>
+    <li>
+      <a class="menu-button font-size small-font left" data-action="code.fontsize" data-data="1em">aA</a>
+      <a class="menu-button font-size medium-font left" data-action="code.fontsize" data-data="1.5em">aA</a>
+      <a class="menu-button font-size large-font left" data-action="code.fontsize" data-data="2em">aA</a>
+    </li>
+    
+  </ul>
+</aside>
+
+
+    
+
+    </div>
+  </div>
+
+  
+  <script id="statusMessageTemplate" type="text/html">
+    <div id="statusMessages" aria-live="assertive" role="alert" tabindex=0 data-inteface="alert" data-alert class="alert-box {{type}}">
+      <div>{{message}}</div>
+      <a href="#" title="Close message" class="close" aria-label="Close Alert" role="button"><i class="fa fa-times-circle"></i></a>
+    </div>
+  </script>
+  
+
+  <!-- the response-indicator divs allow javascript to determine which responsive size is being applied -->
+  <div class="responsive-indicator show-for-small-only" data-size="small"></div>
+  <div class="responsive-indicator show-for-medium-only" data-size="medium"></div>
+  <div class="responsive-indicator show-for-large-up" data-size="large"></div>
+
+  
+
+  <script src="./Trinket_ run code anywhere_files/localStorage.min.js.download" type="text/javacript"></script>
+
+  
+
+  <script src="./Trinket_ run code anywhere_files/lodash.min.js.download"></script>
+  <script src="./Trinket_ run code anywhere_files/bluebird.min.js.download"></script>
+  <script src="./Trinket_ run code anywhere_files/moment.min.js.download" type="text/javascript"></script>
+
+  
+
+  
+  <script src="./Trinket_ run code anywhere_files/three.min.js.download"></script>
+  <script src="./Trinket_ run code anywhere_files/GLTFLoader.js.download"></script>
+  <script src="./Trinket_ run code anywhere_files/OrbitControls.js.download"></script>
+  <script src="./Trinket_ run code anywhere_files/DRACOLoader.js.download"></script>
+  <script src="./Trinket_ run code anywhere_files/RoomEnvironment.js.download"></script>
+
+  
+
+  <script type="text/javascript" src="./Trinket_ run code anywhere_files/rangeslider.min.js.download"></script>
+
+  
+
+  
+  <script type="text/javascript" src="./Trinket_ run code anywhere_files/50e5bcc6-skulpt.min.js.download"></script>
+  <script type="text/javascript" src="./Trinket_ run code anywhere_files/50e5bcc6-skulpt-stdlib.js.download"></script>
+  
+
+  
+
+  <script src="./Trinket_ run code anywhere_files/traqball.js.download"></script>
+
+  <script src="./Trinket_ run code anywhere_files/jquery-ui.min.js.download"></script>
+
+  
+
+  
+  <script src="./Trinket_ run code anywhere_files/embed-python-output-29fd306a.js.download" type="text/javascript"></script>
+  <script>
+  window.senseHatConfig = {
+      "edge-gte-3d" : "15",
+    };
+
+window.senseHatConfig2021 = {};
+
+  </script>
+
+  
+
+
+
+
+
+<div class="tab-options" role="button"><ul><li><a class="file-remove-link menu-button" data-action="file.remove"><i class="fa fa-trash"></i></a></li><li><a class="file-rename-link menu-button" data-action="file.rename"><i class="fa fa-pencil"></i></a></li></ul></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
